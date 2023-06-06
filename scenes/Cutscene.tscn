@@ -1,0 +1,814 @@
+[gd_scene load_steps=32 format=3 uid="uid://b2uswbakqdsug"]
+
+[ext_resource type="Script" path="res://scripts/Cutscene.gd" id="1_d1aiy"]
+[ext_resource type="Script" path="res://scripts/Frame.gd" id="2_yrwtk"]
+[ext_resource type="Texture2D" uid="uid://cv1421hw3xs3m" path="res://assets/Wolfsheim.png" id="3_gnkph"]
+[ext_resource type="Texture2D" uid="uid://day1a7t1jpxqs" path="res://assets/JamesGatz.png" id="4_17yly"]
+[ext_resource type="Texture2D" uid="uid://b4604uegjp8gg" path="res://assets/gatsby.png" id="5_mh8uj"]
+[ext_resource type="Texture2D" uid="uid://crynkbtnsnm0l" path="res://assets/Daisy.png" id="6_m5wdv"]
+[ext_resource type="Texture2D" uid="uid://ca52de2811a8c" path="res://assets/Nick.png" id="7_i77y1"]
+[ext_resource type="Texture2D" uid="uid://b6271es8d0c7v" path="res://assets/gatsbyHouse.png" id="7_yuhd6"]
+[ext_resource type="Texture2D" uid="uid://cnxyt4xnob4h2" path="res://assets/BuchannanHouse.PNG" id="8_3l88u"]
+[ext_resource type="Texture2D" uid="uid://d4rypvn5puuh" path="res://assets/Tom.png" id="9_5go08"]
+[ext_resource type="Texture2D" uid="uid://c62mp3r5tg85b" path="res://assets/City.png" id="10_23x45"]
+[ext_resource type="Texture2D" uid="uid://cb5pmgdkvhvmh" path="res://assets/Car1.PNG" id="11_kh1hr"]
+[ext_resource type="Texture2D" uid="uid://5dulljg8l1ya" path="res://assets/Car2.PNG" id="12_3waf2"]
+[ext_resource type="Texture2D" uid="uid://cwbsn1v3qdk12" path="res://assets/Car3.PNG" id="13_3017c"]
+[ext_resource type="Texture2D" uid="uid://oh8bhfnijmly" path="res://assets/Car4.PNG" id="14_5hklu"]
+[ext_resource type="Texture2D" uid="uid://cv11s8n0o10nk" path="res://assets/MyrtleYell.png" id="14_6b7mu"]
+[ext_resource type="Texture2D" uid="uid://cwbhdia776fwy" path="res://assets/Car5.PNG" id="15_4gs1n"]
+[ext_resource type="Texture2D" uid="uid://3tshtfdf2357" path="res://assets/Myrtle.png" id="16_0jxkv"]
+[ext_resource type="Texture2D" uid="uid://dq2kpftrvtrir" path="res://assets/Car6.PNG" id="16_8h2dm"]
+[ext_resource type="Texture2D" uid="uid://c5v4xr85adg6e" path="res://assets/Wilson.png" id="19_3vtqw"]
+[ext_resource type="Texture2D" uid="uid://hcw45flkffpp" path="res://assets/Pool.png" id="20_4adnv"]
+[ext_resource type="Texture2D" uid="uid://b5x1upbtyj6dm" path="res://assets/WilsonGun.png" id="21_e1o4m"]
+[ext_resource type="AudioStream" uid="uid://b7wbai60ttkvb" path="res://assets/Sound/City (mp3cut.net).mp3" id="23_jh201"]
+[ext_resource type="AudioStream" uid="uid://cospyl2g8p1nk" path="res://assets/Sound/DaisyandEnd (mp3cut.net).mp3" id="24_yphoo"]
+[ext_resource type="AudioStream" uid="uid://xuaecoc8ooa" path="res://assets/Sound/Evolve (mp3cut.net).mp3" id="25_wg4s5"]
+[ext_resource type="AudioStream" uid="uid://cqg7q57l34ctc" path="res://assets/Sound/MyrtleAndPool (mp3cut.net).mp3" id="26_m7hvb"]
+[ext_resource type="AudioStream" uid="uid://bhxkjdfdohgjm" path="res://assets/Sound/NickandTom (mp3cut.net).mp3" id="27_0sy4b"]
+[ext_resource type="AudioStream" uid="uid://tsuwy0o5giqp" path="res://assets/Sound/Wilson (mp3cut.net) (1).mp3" id="28_f0ea3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pv8vo"]
+blend_mode = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tn0bl"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 0.592157)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_1yh0e"]
+Panel/styles/panel = SubResource("StyleBoxFlat_tn0bl")
+
+[node name="Cutscene" type="Node2D"]
+script = ExtResource("1_d1aiy")
+
+[node name="Wolfsheim" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame1" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "WolfSheim: You wanna make some money.?"
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame1"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame1"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame2" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "James Gatz: Yes."
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame2"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame2"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame3" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wolfsheim: I've got the perfect thing for you."
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame3"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame3"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame4" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "James Gatz: Really? Well I'm in!"
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame4"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame4"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame5" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wolfsheim: Fantastic!"
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame5"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame5"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame6" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wolfsheim: Go on the world is yours to conquer."
+music = 2
+
+[node name="Wolfsheim" type="Sprite2D" parent="Wolfsheim/Frame6"]
+visible = false
+position = Vector2(1527, 611)
+scale = Vector2(-0.46876, 0.529253)
+texture = ExtResource("3_gnkph")
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame6"]
+visible = false
+position = Vector2(423, 671)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame7" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "James Gatz is Evolving."
+music = 2
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame7"]
+visible = false
+position = Vector2(964, 645)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame8" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "James Gatz is Evolving..."
+music = 2
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame8"]
+visible = false
+material = SubResource("CanvasItemMaterial_pv8vo")
+position = Vector2(964, 645)
+scale = Vector2(0.630247, 0.66713)
+texture = ExtResource("4_17yly")
+
+[node name="Frame9" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "James Gatz Evolved into Jay Gatsby!"
+music = 2
+
+[node name="JamesGatz" type="Sprite2D" parent="Wolfsheim/Frame9"]
+visible = false
+position = Vector2(845, 891)
+scale = Vector2(0.936728, 0.969792)
+texture = ExtResource("5_mh8uj")
+
+[node name="Frame10" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Gatsby: Hey Old Sport, I remember you from the war, Nick Carraway was it? *smiles*"
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame10"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame10"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame10"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame11" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: Yes I was in the 9th Battalion"
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame11"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame11"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame11"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame12" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Gatsby: You enjoying the party Old Sport?"
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame12"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame12"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame12"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame13" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: Yes, very much, I was surprised toget an invite to the party, yet I still havent seen the host yet."
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame13"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame13"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame13"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame14" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Gatsby: I must not be a very good host, Well you see because, I'm Gatsby"
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame14"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame14"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame14"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame15" type="Node" parent="Wolfsheim"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: Really???"
+music = 4
+
+[node name="House" type="Sprite2D" parent="Wolfsheim/Frame15"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Wolfsheim/Frame15"]
+visible = false
+position = Vector2(528, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Nick" type="Sprite2D" parent="Wolfsheim/Frame15"]
+visible = false
+position = Vector2(1349, 463)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Daisy" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame1" type="Node" parent="Daisy"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Daisy: Gatsby? What Gatsby?"
+music = 1
+
+[node name="House" type="Sprite2D" parent="Daisy/Frame1"]
+visible = false
+position = Vector2(954, 317)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Daisy/Frame1"]
+visible = false
+position = Vector2(636, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Daisy" type="Sprite2D" parent="Daisy/Frame1"]
+visible = false
+position = Vector2(1413, 784)
+scale = Vector2(-1, 1)
+texture = ExtResource("6_m5wdv")
+
+[node name="Frame2" type="Node" parent="Daisy"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Daisy: I certainly am awfully glad to see you again."
+music = 1
+
+[node name="House" type="Sprite2D" parent="Daisy/Frame2"]
+visible = false
+position = Vector2(954, 317)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Daisy/Frame2"]
+visible = false
+position = Vector2(636, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Daisy" type="Sprite2D" parent="Daisy/Frame2"]
+visible = false
+position = Vector2(1413, 784)
+scale = Vector2(-1, 1)
+texture = ExtResource("6_m5wdv")
+
+[node name="Frame3" type="Node" parent="Daisy"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Gatsby: Me as well."
+music = 1
+
+[node name="House" type="Sprite2D" parent="Daisy/Frame3"]
+visible = false
+position = Vector2(954, 317)
+texture = ExtResource("7_yuhd6")
+
+[node name="Gatsby" type="Sprite2D" parent="Daisy/Frame3"]
+visible = false
+position = Vector2(636, 880)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Daisy" type="Sprite2D" parent="Daisy/Frame3"]
+visible = false
+position = Vector2(1413, 784)
+scale = Vector2(-1, 1)
+texture = ExtResource("6_m5wdv")
+
+[node name="Tom1" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame1" type="Node" parent="Tom1"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Tom: Mr. Gatsby! I’m glad to see you, sirr…"
+music = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Tom1/Frame1"]
+visible = false
+position = Vector2(994, 375)
+texture = ExtResource("8_3l88u")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Tom1/Frame1"]
+visible = false
+position = Vector2(544, 875)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Tom1/Frame1"]
+visible = false
+position = Vector2(1495, 823)
+scale = Vector2(-1.20232, 1.14654)
+texture = ExtResource("9_5go08")
+
+[node name="Tom2" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame1" type="Node" parent="Tom2"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Tom: I suppose the latest thing is to sit back and let Mr. Nobody from Nowhere make love to your wife."
+music = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Tom2/Frame1"]
+visible = false
+position = Vector2(994, 259)
+texture = ExtResource("10_23x45")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Tom2/Frame1"]
+visible = false
+position = Vector2(544, 875)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Tom2/Frame1"]
+visible = false
+position = Vector2(1495, 823)
+scale = Vector2(-1.20232, 1.14654)
+texture = ExtResource("9_5go08")
+
+[node name="Frame2" type="Node" parent="Tom2"]
+script = ExtResource("2_yrwtk")
+textBoxText = "TTom:Well, if that’s the idea you can count me out…"
+music = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Tom2/Frame2"]
+visible = false
+position = Vector2(997, 259)
+texture = ExtResource("10_23x45")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Tom2/Frame2"]
+visible = false
+position = Vector2(544, 875)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Tom2/Frame2"]
+visible = false
+position = Vector2(1495, 823)
+scale = Vector2(-1.20232, 1.14654)
+texture = ExtResource("9_5go08")
+
+[node name="CarWilsonPool" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame1" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM*"
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame1"]
+visible = false
+position = Vector2(1071, 522)
+texture = ExtResource("11_kh1hr")
+
+[node name="Frame2" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM*"
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame2"]
+visible = false
+position = Vector2(1071, 522)
+texture = ExtResource("12_3waf2")
+
+[node name="Frame3" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM* Myrtle: TOM! TOM! TOM *CRASH*!"
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame3"]
+visible = false
+position = Vector2(1071, 522)
+texture = ExtResource("13_3017c")
+
+[node name="Myrtle" type="Sprite2D" parent="CarWilsonPool/Frame3"]
+visible = false
+position = Vector2(1314, 675)
+texture = ExtResource("14_6b7mu")
+
+[node name="Frame4" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM*"
+music = 3
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame4"]
+visible = false
+position = Vector2(1071, 522)
+texture = ExtResource("14_5hklu")
+
+[node name="Myrtle" type="Sprite2D" parent="CarWilsonPool/Frame4"]
+visible = false
+position = Vector2(967, 822)
+texture = ExtResource("16_0jxkv")
+
+[node name="Frame5" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM*"
+music = 3
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame5"]
+visible = false
+position = Vector2(1071, 522)
+texture = ExtResource("15_4gs1n")
+
+[node name="Myrtle" type="Sprite2D" parent="CarWilsonPool/Frame5"]
+visible = false
+position = Vector2(967, 822)
+texture = ExtResource("16_0jxkv")
+
+[node name="Frame6" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "*VROOM*"
+music = 3
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame6"]
+visible = false
+position = Vector2(1077, 524)
+texture = ExtResource("16_8h2dm")
+
+[node name="Myrtle" type="Sprite2D" parent="CarWilsonPool/Frame6"]
+visible = false
+position = Vector2(967, 822)
+texture = ExtResource("16_0jxkv")
+
+[node name="Frame7" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wilson Oh, my Ga-od! Oh, my Ga-od! Oh, my Ga-od!"
+music = 5
+
+[node name="Car" type="Sprite2D" parent="CarWilsonPool/Frame7"]
+visible = false
+position = Vector2(1077, 524)
+texture = ExtResource("16_8h2dm")
+
+[node name="Wilson" type="Sprite2D" parent="CarWilsonPool/Frame7"]
+visible = false
+position = Vector2(1432, 797)
+texture = ExtResource("19_3vtqw")
+
+[node name="Myrtle" type="Sprite2D" parent="CarWilsonPool/Frame7"]
+visible = false
+position = Vector2(967, 822)
+texture = ExtResource("16_0jxkv")
+
+[node name="Frame8" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Gatsby: Ima chill in da pool"
+music = 1
+
+[node name="Pool" type="Sprite2D" parent="CarWilsonPool/Frame8"]
+visible = false
+position = Vector2(983, 422)
+texture = ExtResource("20_4adnv")
+
+[node name="Gatsby" type="Sprite2D" parent="CarWilsonPool/Frame8"]
+visible = false
+position = Vector2(548, 872)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Frame9" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wilson: Oh, my God!  you killed her!"
+music = 5
+
+[node name="Pool" type="Sprite2D" parent="CarWilsonPool/Frame9"]
+visible = false
+position = Vector2(983, 422)
+texture = ExtResource("20_4adnv")
+
+[node name="Wilson" type="Sprite2D" parent="CarWilsonPool/Frame9"]
+visible = false
+position = Vector2(1595, 724)
+texture = ExtResource("19_3vtqw")
+
+[node name="Gatsby" type="Sprite2D" parent="CarWilsonPool/Frame9"]
+visible = false
+position = Vector2(454, 808)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CarWilsonPool/Frame9"]
+visible = false
+texture_filter = 1
+position = Vector2(1476, 621)
+scale = Vector2(4, 4)
+texture = ExtResource("21_e1o4m")
+
+[node name="Frame10" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wilson: You may fool me, but you can’t fool god!"
+music = 5
+
+[node name="Pool" type="Sprite2D" parent="CarWilsonPool/Frame10"]
+visible = false
+position = Vector2(983, 422)
+texture = ExtResource("20_4adnv")
+
+[node name="Wilson" type="Sprite2D" parent="CarWilsonPool/Frame10"]
+visible = false
+position = Vector2(1595, 724)
+texture = ExtResource("19_3vtqw")
+
+[node name="Gatsby" type="Sprite2D" parent="CarWilsonPool/Frame10"]
+visible = false
+position = Vector2(454, 808)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CarWilsonPool/Frame10"]
+visible = false
+texture_filter = 1
+position = Vector2(1476, 621)
+scale = Vector2(4, 4)
+texture = ExtResource("21_e1o4m")
+
+[node name="Frame11" type="Node" parent="CarWilsonPool"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Wison: God sees everything."
+music = 5
+
+[node name="Pool" type="Sprite2D" parent="CarWilsonPool/Frame11"]
+visible = false
+position = Vector2(983, 422)
+texture = ExtResource("20_4adnv")
+
+[node name="Wilson" type="Sprite2D" parent="CarWilsonPool/Frame11"]
+visible = false
+position = Vector2(1595, 724)
+texture = ExtResource("19_3vtqw")
+
+[node name="Gatsby" type="Sprite2D" parent="CarWilsonPool/Frame11"]
+visible = false
+position = Vector2(454, 808)
+scale = Vector2(-1, 1)
+texture = ExtResource("5_mh8uj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CarWilsonPool/Frame11"]
+visible = false
+texture_filter = 1
+position = Vector2(1476, 621)
+scale = Vector2(4, 4)
+texture = ExtResource("21_e1o4m")
+
+[node name="End" type="Node2D" parent="."]
+visible = false
+
+[node name="Frame3" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"And as I sat there brooding on the old, unknown world, I thought of Gatsby’s wonder when he first picked out the green light at the end of Daisy’s dock.\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame3"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame3"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame4" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"He had come a long way to this blue lawn, and his dream must have seemed so close that he could hardly fail to grasp it.\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame4"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame4"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame5" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"He did not know that it was already behind him, somewhere back in that vast obscurity beyond the city, where the dark fields of the republic rolled on under the night.\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame5"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame5"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame6" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"Gatsby believed in the green light, the orgastic future that year by year recedes before us.\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame6"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame6"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame7" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"It eluded us then, but that’s no matter—to-morrow we will run faster, stretch out our arms farther.... And one fine morning——\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame7"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame7"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame8" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Nick: \"So we beat on, boats against the current, borne back ceaselessly into the past.\""
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame8"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Nick" type="Sprite2D" parent="End/Frame8"]
+visible = false
+position = Vector2(806, 461)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_i77y1")
+
+[node name="Frame1" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "The End"
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame1"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="Frame2" type="Node" parent="End"]
+script = ExtResource("2_yrwtk")
+textBoxText = "Thanks for Playing"
+music = 1
+
+[node name="House" type="Sprite2D" parent="End/Frame2"]
+visible = false
+position = Vector2(957, 344)
+texture = ExtResource("7_yuhd6")
+
+[node name="TextBox" type="Panel" parent="."]
+z_index = 1
+offset_left = 210.0
+offset_top = 855.0
+offset_right = 1710.0
+offset_bottom = 980.0
+theme = SubResource("Theme_1yh0e")
+
+[node name="Text" type="RichTextLabel" parent="TextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1480.0
+offset_bottom = 105.0
+theme_override_font_sizes/normal_font_size = 24
+text = "CUTSCENE"
+
+[node name="Music" type="Node" parent="."]
+
+[node name="City" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("23_jh201")
+
+[node name="DaisyEnd" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("24_yphoo")
+
+[node name="Evolve" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("25_wg4s5")
+
+[node name="MyrtlePool" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("26_m7hvb")
+
+[node name="NickTom" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("27_0sy4b")
+
+[node name="Wilson" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("28_f0ea3")

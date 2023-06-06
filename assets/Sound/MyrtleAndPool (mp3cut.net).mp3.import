@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqg7q57l34ctc"
+path="res://.godot/imported/MyrtleAndPool (mp3cut.net).mp3-2f1aa7c751bae6c2cde1d21634f4bb28.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/MyrtleAndPool (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/MyrtleAndPool (mp3cut.net).mp3-2f1aa7c751bae6c2cde1d21634f4bb28.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

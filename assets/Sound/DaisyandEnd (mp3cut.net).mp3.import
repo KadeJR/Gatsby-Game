@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cospyl2g8p1nk"
+path="res://.godot/imported/DaisyandEnd (mp3cut.net).mp3-5c599ddff041f6b3890783b4b743b884.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/DaisyandEnd (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/DaisyandEnd (mp3cut.net).mp3-5c599ddff041f6b3890783b4b743b884.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

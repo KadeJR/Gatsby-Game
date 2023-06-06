@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://xuaecoc8ooa"
+path="res://.godot/imported/Evolve (mp3cut.net).mp3-71cecef8b13cb2d1d160db0ca435ae9c.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/Evolve (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Evolve (mp3cut.net).mp3-71cecef8b13cb2d1d160db0ca435ae9c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
